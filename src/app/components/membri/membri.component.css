@@ -1,0 +1,31 @@
+.ion-minus{
+    padding:0px 10px;
+}
+
+.team{
+	background-color:#f6f6f6;
+	padding:60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.team h4 {
+    margin-top: 20px;
+    color: #5db4c0;
+}
+
+.team .fa{
+    color: #5db4c0;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px;
+}
+.team-member > p > a {
+    color: #5db4c0;
+}
+.team-member > p > a:hover {
+    color: black;
+}
+.imgDimension {
+    width: 220px;
+    height: 220px;
+}

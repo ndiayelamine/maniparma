@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'maniparma';
+  isAriaExpanded = false;
+  toggleisExpand() {
+    document.getElementById('myNavbar').setAttribute('aria-expanded', '' + this.isAriaExpanded);
+    document.getElementById('myNavbar').className = 'navbar-collapse collapse';
+  }
 }

@@ -1,0 +1,32 @@
+<div class="team">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 text-center">
+        <h2><span class="ion-minus"></span>Nostri Membri<span class="ion-minus"></span></h2>
+        <p>Il nostro team &egrave; composto dai seguenti soci e volontari</p><br>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div *ngFor="let membro of listaMembri" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <img class="img-rounded imgDimension" alt="team-photo"
+          src="./assets/img/membri/user.png"
+          width="100%">
+        <div class="team-member">
+          <h4>{{membro.contact_name}}</h4>
+          <p>{{membro.contact_role}}</p>
+          <p><a href="mailto:{{membro.contact_mail}}" title="{{membro.contact_mail}}"
+            class="emailClass">{{membro.contact_mail}}</a></p>
+        </div>
+        <!--                <p class="social">
+                 <a href="#"><span class="fa fa-facebook-square"></span></a>
+                 <a href="#"><span class="fa fa-twitter-square"></span></a>
+                 <a href="#"><span class="fa fa-linkedin-square"></span></a>
+                 <a href="#"><span class="fa fa-google-plus-square"></span></a>
+               </p> -->
+      </div>
+      <!--col-lg-4 -->
+    </div> <!-- row text-center -->
+  </div>
+</div>

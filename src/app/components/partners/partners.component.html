@@ -1,0 +1,18 @@
+<!-- Clients Aside -->
+<section id="partners" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">I nostri parteners</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div *ngFor="let partner of listaPartners" class="col-md-3 col-sm-6 col-xs-12 partnerStyle">
+        <a href="{{partner.column_link}}" target="blank">
+          <img src="{{partner.img_url}}" [hidden]="partner.img_url == 'unknown'" class="img-responsive img-centered imgPartner" alt="{{partner.column_title}}">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

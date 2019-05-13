@@ -1,21 +1,53 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#myNavbar">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">Associazione Mani</a>-->
+            <a class="navbar-brand page-scroll" href="/"><img src="./assets/img/logo_mani.png" class="logoStyle" title="Associazione Mani" alt="Associazione Mani"></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar" #myNavbar>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden"> <a href="/"></a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/chiSiamo">HOME</a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/cosaFacciamo">SVILUPPI</a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/progetti">PROGETTI</a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/membri">MEMBRI</a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/partners">PARTNERS</a> </li>
+                <li routerLinkActive="active" (click)="toggleisExpand()"> <a routerLink="/contattaci">Contattaci</a> </li>
+            </ul>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
 
 <router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Creato da: <b><a href="https://www.linkedin.com/in/lamine92/" target="_blank">
+                        Lamine Ndiaye </a></b></span>
+            </div>
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Mani 2019</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="https://www.youtube.com/channel/UCxWx0LWBQPhMupCnFnzc0JA/" target="blank"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/Associazione-MANI-10150095283330626/" target="blank"><i class="fa fa-facebook"></i></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

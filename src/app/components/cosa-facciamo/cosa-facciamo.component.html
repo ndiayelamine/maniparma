@@ -1,0 +1,38 @@
+<!-- About Section -->
+<section id="cosaFacciamo" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">COSA FACCIAMO</h2>
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li *ngFor="let item of listaCosaFacciamo" class="{{item.css_class}}">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="{{item.img_url_big}}" alt="" width="512px">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h3>{{item.column_title}}</h3>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted" [innerHTML]="item.column_content"></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>Fai Parte
+                                <br>Della Nostra
+                                <br>Storia!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+@media (max-width: 768px){
+    .timeline>li .timeline-image h4 {
+        font-size: 9px;
+        margin-top: 12px;
+        line-height: 12px;
+    }
+}
+
+@media (min-width: 768px ) and (max-width: 1024px){
+    .timeline>li .timeline-image h4 {
+        font-size: 11px;
+        margin-top: 14px;
+        line-height: 16px;
+    }
+}
+
+.timeline>li .timeline-panel>.timeline-heading h3 {
+    font-size: 20px;
+}

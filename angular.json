@@ -20,12 +20,22 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets"            
             ],
             "styles": [
+              "src/assets/vendor/bootstrap/css/bootstrap.min.css",
+              "src/assets/vendor/font-awesome/css/font-awesome.min.css",
+              "src/assets/css/agency.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/vendor/jquery/jquery.min.js",
+              "src/assets/vendor/bootstrap/js/bootstrap.min.js",
+              "src/assets/js/jquery.easing.min.js",
+              "src/assets/js/jqBootstrapValidation.js",
+              "src/assets/js/contact_me.js",
+              "src/assets/js/agency.min.js"  
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
