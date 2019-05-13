@@ -39,7 +39,7 @@ if($num>0){
             "title" => $title,
             "seo_title" => html_entity_decode($seo_title),
             "long_content" => $long_content,
-            "data" => $data,
+            "data" => date("d-m-Y", strtotime($data)),
             "news_link" => $news_link,
             "news_link_open" => $news_link_open
         );

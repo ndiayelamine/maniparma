@@ -30,7 +30,7 @@ if($news->name!=null){
 		"title" => $news->title,
 		"seo_title" => html_entity_decode($news->seo_title),
 		"long_content" => $news->long_content,
-		"data" => $news->data,
+		"data" => date("d-m-Y", strtotime($news->data)),
 		"news_link" => $news->news_link,
 		"news_link_open" => $news->news_link_open
     );

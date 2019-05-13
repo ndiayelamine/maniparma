@@ -37,8 +37,8 @@ if($num>0){
         $chi_siamo_item=array(
             "id" => $id,
             "column_position" => $column_position,
-            "column_title" => html_entity_decode($column_title),
-            "column_content" => $column_content,
+            "column_title" => strip_tags(html_entity_decode($column_title)),
+            "column_content" => html_entity_decode($column_content),
             "img_url_big" => $img_url_big
         );
  

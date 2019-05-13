@@ -11,7 +11,7 @@ class Partners{
     public $column_title;
     public $column_link;
     public $column_link_open;
-	public $img_url;
+    public $img_url;
  
     // constructor with $db as database connection
     public function __construct($db){
