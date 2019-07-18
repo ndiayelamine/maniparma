@@ -48,7 +48,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [ChiSiamoService, { provide: LOCALE_ID, useValue: 'it-IT' },
               CosaFacciamoService, { provide: LOCALE_ID, useValue: 'it-IT' },
