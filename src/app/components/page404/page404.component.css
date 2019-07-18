@@ -62,11 +62,13 @@ p{
 --------------------------*/
 .error-content {
     padding: 0 0 70px;
+    /*background-color: #eeeeee;*/
 }
 .error-text{
     text-align: center;
 }
 .error {
+    margin-top: 50px;
     font-size: 180px;
     font-weight: 100;
 }
