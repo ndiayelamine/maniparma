@@ -18,15 +18,18 @@ import { CosaFacciamoService } from './Services/cosaFacciamo/cosa-facciamo.servi
 import { PartnersService } from './Services/partners/partners.service';
 import { ProgettiService } from './Services/progetti/progetti.service';
 import { MembriComponent } from './Components/membri/membri.component';
+import { Page404Component } from './components/Page404/page404.component';
 
 const appRoutes: Routes = [
   { path: '', component: ChiSiamoComponent },
+  { path: './', component: ChiSiamoComponent },
   { path: 'chiSiamo', component: ChiSiamoComponent },
   { path: 'cosaFacciamo', component: CosaFacciamoComponent },
   { path: 'progetti', component: ProgettiComponent },
   { path: 'membri', component: MembriComponent },
   { path: 'partners', component: PartnersComponent },
   { path: 'contattaci', component: ContattaciComponent },
+  { path: '**', component: Page404Component }
 ];
 
 @NgModule({
@@ -37,7 +40,8 @@ const appRoutes: Routes = [
     ContattaciComponent,
     ChiSiamoComponent,
     CosaFacciamoComponent,
-    MembriComponent
+    MembriComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
