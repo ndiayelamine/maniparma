@@ -2,17 +2,17 @@
 class Database{
  
     // Configurazione localhost
-    private $host = "localhost";
-    private $db_name = "maniparma";
-    private $username = "root";
-    private $password = "";
-	
-	/* Configurazione server host */
-	/*private $db_name = "msenegae_maniparma";
-	private $host = "www.senegalesidiparma.it:3306";
-	private $username = "msenegae_lamine";
-	private $password = "001992";*/
+    //private $host = "localhost";
+    //private $db_name = "maniparma";
+    //private $username = "root";
+    //private $password = "";
 
+    // Configurazione localhost
+    private $host = "62.149.150.177"; // => "mysql.aruba.it";
+    private $db_name = "Sql934546_1";
+    private $username = "Sql934546";
+    private $password = "jid8c08x0y";
+	
 	public $conn;
 	
     // get the database connection

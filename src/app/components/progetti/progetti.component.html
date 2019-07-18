@@ -16,7 +16,7 @@
               <i class="fa fa-plus fa-3x"></i>
             </div>
           </div>
-          <img src="./assets/img/progetti/proj_lara.jpg" class="img-responsive" alt="">
+          <img src="./assets/img/{{prj.image_url}}" class="img-responsive" alt="">
         </a>
         <div class="portfolio-caption">
           <p style="font-size: 12px; padding-left: 25px; padding-right: 25px;">{{prj.progetti_date}} - <span>{{prj.location}}</span></p>
@@ -49,7 +49,7 @@
               <h2>{{prj.title}}</h2>
               <p></p>
 <!--               <p class="item-intro text-muted">{{prj.title}}</p> -->
-              <img class="img-responsive img-centered imgShadow" src="./assets/img/progetti/proj_lara.jpg" alt="">
+              <img class="img-responsive img-centered imgShadow" src="./assets/img/{{prj.image_url}}" alt="">
               <div [innerHTML]="prj.long_description"></div>
               <h2 class="galleryTitle">Foto Gallery</h2>
               <ul class="list-inline">
@@ -57,7 +57,7 @@
                 <li>Luogo: {{prj.location}}</li>
               </ul>
               <div class="row">
-                    <div *ngFor="let prjMedia of prj.listaProgMedia" class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive imgShadow" src="{{prjMedia.image_url}}" /></div>
+                    <div *ngFor="let prjMedia of prj.listaProgMedia" class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive imgShadow" src="./assets/img/{{prjMedia.image_url}}" /></div>
 <!--                     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive imgShadow" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
                     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive imgShadow" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" /></div>
                     <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive imgShadow" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div> -->
