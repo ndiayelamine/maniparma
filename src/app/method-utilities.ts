@@ -1,8 +1,8 @@
 export class MethodUtilities {
     // per localhost
-    private static host = 'http://localhost/mani2019';
+    //private static host = 'http://localhost/mani2019';
     // per serverhost
-    //private static host = './assets/php';
+    private static host = './assets/php';
 
     public static urlChiSiamo = MethodUtilities.host + '/api/chi_siamo/read.php';
     public static urlNews = MethodUtilities.host + '/api/news/read.php';
