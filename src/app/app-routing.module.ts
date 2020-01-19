@@ -6,7 +6,7 @@ import { ProgettiComponent } from './Components/progetti/progetti.component';
 import { MembriComponent } from './Components/membri/membri.component';
 import { PartnersComponent } from './Components/partners/partners.component';
 import { ContattaciComponent } from './Components/contattaci/contattaci.component';
-import { Page404Component } from './components/page404/page404.component';
+import { Page404Component } from './Components/page404/page404.component';
 
 const routes: Routes = [
   { path: '', component: ChiSiamoComponent },
