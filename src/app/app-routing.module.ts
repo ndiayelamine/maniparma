@@ -7,6 +7,7 @@ import { MembriComponent } from './Components/membri/membri.component';
 import { PartnersComponent } from './Components/partners/partners.component';
 import { ContattaciComponent } from './Components/contattaci/contattaci.component';
 import { Page404Component } from './Components/page404/page404.component';
+import { TrasparenzaComponent } from './Components/trasparenza/trasparenza.component';
 
 const routes: Routes = [
   { path: '', component: ChiSiamoComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'progetti', component: ProgettiComponent },
   { path: 'membri', component: MembriComponent },
   { path: 'partners', component: PartnersComponent },
+  { path: 'trasparenza', component: TrasparenzaComponent },
   { path: 'contattaci', component: ContattaciComponent },
   { path: '**', component: Page404Component }
 ];

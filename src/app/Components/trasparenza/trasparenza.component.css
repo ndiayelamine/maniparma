@@ -1,0 +1,12 @@
+.trasparenzaStyle{
+    padding: 30px;
+}
+.imgTrasparenza {
+    height: 200px !important; 
+    width:200px !important;
+}
+
+.pragraphTrasparenza {
+    text-align: center;
+    font-weight: bold;
+}

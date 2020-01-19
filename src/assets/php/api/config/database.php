@@ -2,16 +2,16 @@
 class Database{
  
     // Configurazione localhost
-    //private $host = "localhost";
-    //private $db_name = "maniparma";
-    //private $username = "root";
-    //private $password = "";
+    private $host = "localhost";
+    private $db_name = "maniparma";
+    private $username = "root";
+    private $password = "";
 
     // Configurazione localhost
-    private $host = "62.149.150.177"; // => "mysql.aruba.it";
-    private $db_name = "Sql934546_1";
-    private $username = "Sql934546";
-    private $password = "jid8c08x0y";
+    //private $host = "62.149.150.177"; // => "mysql.aruba.it";
+    //private $db_name = "Sql934546_1";
+    //private $username = "Sql934546";
+    //private $password = "jid8c08x0y";
 	
 	public $conn;
 	

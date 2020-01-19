@@ -19,6 +19,7 @@ import { PartnersService } from './Services/partners/partners.service';
 import { ProgettiService } from './Services/progetti/progetti.service';
 import { MembriComponent } from './Components/membri/membri.component';
 import { Page404Component } from './Components/page404/page404.component';
+import { TrasparenzaComponent } from './Components/trasparenza/trasparenza.component';
 
 const appRoutes: Routes = [
   { path: '', component: ChiSiamoComponent },
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     ChiSiamoComponent,
     CosaFacciamoComponent,
     MembriComponent,
-    Page404Component
+    Page404Component,
+    TrasparenzaComponent
   ],
   imports: [
     BrowserModule,

@@ -9,9 +9,9 @@ import { map, catchError } from 'rxjs/operators';
 })
 export class NewsService {
     // private url = './assets/serverServices/concerti.php';
-    // private url = 'http://localhost/mani2019/api/news/read.php';
+    private url = 'http://localhost/mani2019/api/news/read.php';
 
-    private url = './assets/php/api/news/read.php';
+    //private url = './assets/php/api/news/read.php';
 
     constructor(public http: HttpClient) {
       console.log('NewsService is connected...');
