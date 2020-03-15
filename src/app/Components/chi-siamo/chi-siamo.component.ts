@@ -22,15 +22,15 @@ export class ChiSiamoComponent implements OnInit {
   ngOnInit() {
     this.chiSiamoService.getChiSiamo().subscribe((res: any) => {
         this.listaChiSiamo = res;
-        console.log(this.listaChiSiamo);
+        // console.log(this.listaChiSiamo);
       }, error => {
         console.log('AppComponent Error', error);
     });
     this.chiSiamoService.getNews().subscribe((res: any) => {
-      if(res != null){
+      if (res != null) {
         res[0].active = 'active';
         this.listaNews = res;
-        console.log(this.listaNews);
+        // console.log(this.listaNews);
       }
     }, error => {
       console.log('AppComponent Error', error);

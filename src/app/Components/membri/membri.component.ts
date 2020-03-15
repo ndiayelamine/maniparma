@@ -18,7 +18,7 @@ export class MembriComponent implements OnInit {
   ngOnInit() {
     this.membriService.getMembri().subscribe((res: any) => {
       this.listaMembri = res;
-      console.log(this.listaMembri);
+      //console.log(this.listaMembri);
       }, error => {
         console.log('AppComponent Error', error);
     });

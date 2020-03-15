@@ -4,6 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LOCALE_ID } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CookieService } from 'ngx-cookie-service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +22,7 @@ import { ProgettiService } from './Services/progetti/progetti.service';
 import { MembriComponent } from './Components/membri/membri.component';
 import { Page404Component } from './Components/page404/page404.component';
 import { TrasparenzaComponent } from './Components/trasparenza/trasparenza.component';
+import { from } from 'rxjs';
 
 const appRoutes: Routes = [
   { path: '', component: ChiSiamoComponent },
@@ -50,12 +53,14 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, { useHash: true })
   ],
   providers: [ChiSiamoService, { provide: LOCALE_ID, useValue: 'it-IT' },
               CosaFacciamoService, { provide: LOCALE_ID, useValue: 'it-IT' },
               PartnersService, { provide: LOCALE_ID, useValue: 'it-IT' },
-              ProgettiService, { provide: LOCALE_ID, useValue: 'it-IT' }],
+              ProgettiService, { provide: LOCALE_ID, useValue: 'it-IT' },
+              CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -18,7 +18,7 @@ export class PartnersComponent implements OnInit {
   ngOnInit() {
     this.partnersService.getPartners().subscribe((res: any) => {
       this.listaPartners = res;
-      console.log(this.listaPartners);
+      //console.log(this.listaPartners);
       }, error => {
         console.log('AppComponent Error', error);
     });

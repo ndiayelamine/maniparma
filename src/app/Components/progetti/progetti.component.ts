@@ -19,7 +19,7 @@ export class ProgettiComponent implements OnInit {
     this.progettiService.getProgetti().subscribe((res: any) => {
       if (res != null) {
         this.listaProgetti = this.getMedias(res);
-        console.log(this.listaProgetti);
+        // console.log(this.listaProgetti);
       }
     }, error => {
       console.log('AppComponent Error', error);
@@ -31,7 +31,7 @@ export class ProgettiComponent implements OnInit {
       this.progettiService.getProgettiMedia(res[i].progetti_id).subscribe((result: any) => {
         if (result != null) {
           res[i].listaProgMedia = result;
-          console.log(res[i].listaProgMedia);
+          //console.log(res[i].listaProgMedia);
         }
       }, error => {
         console.log('AppComponent Error', error);

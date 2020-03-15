@@ -25,7 +25,7 @@ export class CosaFacciamoComponent implements OnInit {
           }
         }
         this.listaCosaFacciamo = res;
-        console.log(this.listaCosaFacciamo);
+        //console.log(this.listaCosaFacciamo);
       }
     }, error => {
       console.log('AppComponent Error', error);
