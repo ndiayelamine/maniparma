@@ -11,6 +11,7 @@ import { SendMailService } from 'src/app/Services/sendMail/send-mail.service';
 export class ContattaciComponent implements OnInit {
   messageForm: FormGroup;
   submitted = false;
+  msgSent = false;
 
   constructor(private formBuilder: FormBuilder, private cookieService: CookieService, private sendMailService: SendMailService) {
   }
@@ -43,6 +44,10 @@ export class ContattaciComponent implements OnInit {
 
     this.sendMailService.sendMail(this.messageForm.value).subscribe((res: any) => {
       console.log(res);
+      if(res.success){
+        this.msgSent = true;
+        this.onReset();
+      }
     }, error => {
       console.log('AppComponent Error', error);
     });
