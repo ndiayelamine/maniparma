@@ -25,6 +25,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Struttura della tabella `trasparenza`
+--
+
+CREATE TABLE IF NOT EXISTS `trasparenza` (
+  `trasparenzaId` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(250) NOT NULL,
+  `docLink` varchar(250) NOT NULL,
+  `docIcon` varchar(250) NOT NULL,
+  PRIMARY KEY (`trasparenzaId`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+
+--
+-- Dump dei dati per la tabella `trasparenza`
+--
+
+INSERT INTO `trasparenza` (`trasparenzaId`, `title`, `docLink`, `docIcon`) VALUES
+(1, 'Bilancio Anno 2016', './assets/trasparenza/Bilancio_2016.pdf', './assets/trasparenza/pdf_download.png'),
+(2, 'Bilancio Anno 2017', './assets/trasparenza/Bilancio_2017.pdf', './assets/trasparenza/pdf_download.png'),
+(3, 'Bilancio Anno 2018', './assets/trasparenza/Bilancio_2018.pdf', './assets/trasparenza/pdf_download.png'),
+(4, 'Contributi Anno 2018', './assets/trasparenza/Contributi_2018.pdf', './assets/trasparenza/pdf_download.png'),
+(5, 'Contributi Anno 2019', './assets/trasparenza/Contributi_2019.pdf', './assets/trasparenza/pdf_download.png');
+
+--
 -- Struttura della tabella `chi_siamo`
 --
 

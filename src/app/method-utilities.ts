@@ -12,4 +12,5 @@ export class MethodUtilities {
     public static urlProgetti = MethodUtilities.host + '/api/progetti/read.php';
     public static urlProgettiMedia = MethodUtilities.host + '/api/progetti_media/read_progetti_media.php';
     public static urlSendMail = MethodUtilities.host + '/api/sendMail.php';
+    public static urlTrasparenza = MethodUtilities.host + '/api/trasparenza/read.php';
 }
