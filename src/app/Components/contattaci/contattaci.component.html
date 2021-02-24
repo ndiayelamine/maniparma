@@ -53,7 +53,7 @@
               <div class="form-group">
                 <textarea class="form-control" formControlName="message" placeholder="Messaggio *" id="message" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
                 <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                  <div *ngIf="f.message.errors.required" class="help-block errorMessage">Inserire il numero di telefono</div>
+                  <div *ngIf="f.message.errors.required" class="help-block errorMessage">Inserire il messaggio</div>
                 </div>
               </div>
             </div>
