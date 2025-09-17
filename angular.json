@@ -33,9 +33,9 @@
               "src/assets/vendor/jquery/jquery.min.js",
               "src/assets/vendor/bootstrap/js/bootstrap.min.js",
               "src/assets/js/jquery.easing.min.js",
-              //"src/assets/js/jqBootstrapValidation.js",
-              //"src/assets/js/contact_me.js",
-              "src/assets/js/agency.min.js"  
+              "src/assets/js/agency.min.js"
+              // "src/assets/js/jqBootstrapValidation.js",
+              // "src/assets/js/contact_me.js",
             ],
             "es5BrowserSupport": true
           },

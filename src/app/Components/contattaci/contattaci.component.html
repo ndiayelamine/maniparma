@@ -6,7 +6,7 @@
         <!-- <h2 class="section-heading">Contattaci</h2> -->
         <div class="section-subheading text-muted">
           <h2 style="color:white">Associazione Mani</h2>
-          <p style="color:white">Via Argonne, 4, 43125 Parma.</p>
+          <p style="color:white">Via Laudedeo Testi, 4, 43122 Parma.</p>
           <p><a href="mailto:segreteria@maniparma.org" title="segreteria@maniparma.org"
               class="emailClass">segreteria@maniparma.org</a></p>
           <p><a href="mailto:mani.parma@gmail.com" title="mani.parma@gmail.com"
@@ -18,6 +18,14 @@
     <br />
     <div class="row">
       <div class="col-lg-12">
+        <div id="success-alert" *ngIf="msgSent" class="alert alert-success alert-dismissable fade in">
+          <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong> Il messaggio &egrave; stato inviato con successo! </strong>
+        </div>
+        <div id="error-alert" *ngIf="msgError" class="alert alert-danger alert-dismissable fade in">
+          <a class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong> Errore durante l'invio del messaggio! </strong>
+        </div>
         <form [formGroup]="messageForm" (ngSubmit)="onSubmit()" name="messageForm" id="messageForm" novalidate>
           <div class="row">
             <div class="col-md-6">
@@ -45,7 +53,7 @@
               <div class="form-group">
                 <textarea class="form-control" formControlName="message" placeholder="Messaggio *" id="message" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
                 <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
-                  <div *ngIf="f.message.errors.required" class="help-block errorMessage">Inserire il numero di telefono</div>
+                  <div *ngIf="f.message.errors.required" class="help-block errorMessage">Inserire il messaggio</div>
                 </div>
               </div>
             </div>

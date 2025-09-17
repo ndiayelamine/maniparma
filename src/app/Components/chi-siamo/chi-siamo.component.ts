@@ -30,6 +30,7 @@ export class ChiSiamoComponent implements OnInit {
       if (res != null) {
         res[0].active = 'active';
         this.listaNews = res;
+        this.listaNews = this.listaNews.reverse();
         // console.log(this.listaNews);
       }
     }, error => {

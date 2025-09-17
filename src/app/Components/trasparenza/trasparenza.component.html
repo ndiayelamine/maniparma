@@ -8,12 +8,15 @@
         </div>
 
         <div class="row">
-            <!--<div *ngFor="let partner of listaPartners" class="col-md-3 col-sm-6 col-xs-12 partnerStyle">
-          <a href="{{partner.column_link}}" target="blank">
-            <img src="{{partner.img_url}}" [hidden]="partner.img_url == 'unknown'" class="img-responsive img-centered imgPartner" alt="{{partner.column_title}}">
-          </a>
-        </div>-->
-            <div class="col-md-3 col-sm-6 col-xs-12 trasparenzaStyle">
+            <div *ngFor="let doc of listaDoc" class="col-md-3 col-sm-6 col-xs-12 trasparenzaStyle">
+                <a href="{{doc.docLink}}" target="blank">
+                    <img src="{{doc.docIcon}}" class="img-responsive img-centered imgTrasparenza"
+                        alt="{{doc.title}}">
+                    <p class="pragraphTrasparenza">{{doc.title}}</p>
+                </a>
+            </div>
+
+            <!-- <div class="col-md-3 col-sm-6 col-xs-12 trasparenzaStyle">
                 <a href="./assets/trasparenza/Contributi_2019.pdf" target="blank">
                     <img src="./assets/trasparenza/pdf_download.png" class="img-responsive img-centered imgTrasparenza"
                         alt="Contributi anno 2019">
@@ -25,6 +28,13 @@
                     <img src="./assets/trasparenza/pdf_download.png" class="img-responsive img-centered imgTrasparenza"
                         alt="Contributi anno 2018">
                     <p class="pragraphTrasparenza">Contributi Anno 2018</p>
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 trasparenzaStyle">
+                <a href="./assets/trasparenza/Bilancio_2018.pdf" target="blank">
+                    <img src="./assets/trasparenza/pdf_download.png" class="img-responsive img-centered imgTrasparenza"
+                        alt="Bilancio Anno 2017">
+                    <p class="pragraphTrasparenza">Bilancio Anno 2018</p>
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12 trasparenzaStyle">
@@ -40,7 +50,7 @@
                         alt="Bilancio Anno 2016">
                     <p class="pragraphTrasparenza">Bilancio Anno 2016</p>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

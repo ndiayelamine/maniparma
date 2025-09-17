@@ -11,6 +11,8 @@ import { SendMailService } from 'src/app/Services/sendMail/send-mail.service';
 export class ContattaciComponent implements OnInit {
   messageForm: FormGroup;
   submitted = false;
+  msgSent = false;
+  msgError = false;
 
   constructor(private formBuilder: FormBuilder, private cookieService: CookieService, private sendMailService: SendMailService) {
   }
@@ -42,8 +44,18 @@ export class ContattaciComponent implements OnInit {
     }
 
     this.sendMailService.sendMail(this.messageForm.value).subscribe((res: any) => {
-      console.log(res);
+      // console.log(res);
+      if(res.success){
+        this.msgSent = true;
+        this.msgError = false;
+        this.onReset();
+      }else{
+        this.msgSent = false;
+        this.msgError = true;
+        console.log(res);
+      }
     }, error => {
+      this.msgError = true;
       console.log('AppComponent Error', error);
     });
     // display form values on success
@@ -51,8 +63,10 @@ export class ContattaciComponent implements OnInit {
   }
 
   onReset() {
-    this.submitted = false;
     this.messageForm.reset();
+    this.submitted = false;
+    // this.msgSent = false;
+   // this.msgError = false;
   }
 
 }
